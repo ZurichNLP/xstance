@@ -1,8 +1,8 @@
 # <span style="font-variant:small-caps;">x</span>-stance
 
-Documentation and evaluation script accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/).
+Documentation and evaluation script accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/abs/2003.08385).
 
-The data can be downloaded [here](https://www.cl.uzh.ch/dam/jcr:f866f285-7784-4d04-a828-d3c2a9242776/xstance-data-v1.0.zip). A detailed description can be found in the [paper](https://arxiv.org/).
+The data can be downloaded [here](https://www.cl.uzh.ch/dam/jcr:f866f285-7784-4d04-a828-d3c2a9242776/xstance-data-v1.0.zip). A detailed description can be found in the [paper](https://arxiv.org/abs/2003.08385).
 
 ## Summary
 
@@ -145,7 +145,8 @@ The dataset and baseline model are described in:
 @article{vamvas2020xstance,
   title={X-Stance: A Multilingual Multi-Target Dataset for Stance Detection},
   author={Vamvas, Jannis and Sennrich, Rico},
-  journal={arXiv preprint arXiv:XXXXXX},
+  journal={arXiv preprint arXiv:2003.08385},
+  url = "https://arxiv.org/abs/2003.08385",
   year={2020}
 }
 ```
