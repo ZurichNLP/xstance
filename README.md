@@ -2,7 +2,7 @@
 
 Documentation and evaluation script accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/abs/2003.08385).
 
-The data can be downloaded [here](https://www.cl.uzh.ch/dam/jcr:f866f285-7784-4d04-a828-d3c2a9242776/xstance-data-v1.0.zip). A detailed description can be found in the [paper](https://arxiv.org/abs/2003.08385).
+The data can be downloaded [here](http://tiny.uzh.ch/12p). A detailed description can be found in the [paper](https://arxiv.org/abs/2003.08385).
 
 ## Summary
 
@@ -150,3 +150,83 @@ The dataset and baseline model are described in:
   year={2020}
 }
 ```
+
+## Metadata
+The metadata are used by search engines such as Google Dataset Search.
+<div itemscope itemtype="http://schema.org/Dataset">
+    <table>
+        <tr>
+            <th>property</th>
+            <th>value</th>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td><code itemprop="name"><span style="font-variant:small-caps;">x</span>-Stance: A Multilingual
+                Multi-Target Dataset for Stance Detection</code></td>
+        </tr>
+        <tr>
+            <td>description</td>
+            <td><code itemprop="description">The <span style="font-variant:small-caps;">x</span>-stance dataset contains
+                more than 150 political questions, and 67k comments written by candidates on those questions. It can be
+                used to train and evaluate stance detection systems. The comments are partly German, partly French and
+                Italian. The questions are available in all the three languages plus English. The data have been
+                extracted from the Swiss voting advice platform Smartvote.ch.</code></td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td><code itemprop="url">https://github.com/ZurichNLP/xstance</code></td>
+        </tr>
+        <tr>
+            <td>sameAs</td>
+            <td><code itemprop="sameAs">https://github.com/ZurichNLP/xstance</code></td>
+        </tr>
+        <tr>
+            <td>license</td>
+            <td>
+                <div itemscope itemtype="http://schema.org/CreativeWork" itemprop="license">
+                    <table>
+                        <tr>
+                            <th>property</th>
+                            <th>value</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td><code itemprop="name">CC BY-NC 4.0</code></td>
+                        </tr>
+                        <tr>
+                            <td>url</td>
+                            <td><code itemprop="url">https://creativecommons.org/licenses/by-nc/4.0/</code></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>distribution</td>
+            <td>
+                <div itemscope itemtype="http://schema.org/DataDownload" itemprop="distribution">
+                    <table>
+                        <tr>
+                            <th>property</th>
+                            <th>value</th>
+                        </tr>
+                        <tr>
+                            <td>contentUrl</td>
+                            <td><code itemprop="contentUrl">http://tiny.uzh.ch/12p</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>encodingFormat</td>
+                            <td><code itemprop="encodingFormat">application/zip</code>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>citation</td>
+            <td><code itemprop="citation">https://identifiers.org/arxiv:2003.08385</code></td>
+        </tr>
+    </table>
+</div>
