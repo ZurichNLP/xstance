@@ -98,7 +98,7 @@ IT 70.19234360410832
 
 ## BERT Baseline
 Dependencies:
-- Python 3
+- Python >= 3.6
 - AllenNLP 0.9.0 (http://docs.allennlp.org/master/)
 - `pip install -r baseline/requirements.txt`
 - The commands below assume GPU computation. They can be adapted for CPU, however.
