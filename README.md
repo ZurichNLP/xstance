@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jvamvas/xstance.svg?branch=master)](https://travis-ci.org/jvamvas/xstance)
+[![Build Status](https://travis-ci.org/ZurichNLP/xstance.svg?branch=master)](https://travis-ci.org/ZurichNLP/xstance)
 
 # <span style="font-variant:small-caps;">x</span>-stance
 
