@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jvamvas/xstance.svg?branch=master)](https://travis-ci.org/jvamvas/xstance)
+
 # <span style="font-variant:small-caps;">x</span>-stance
 
 Documentation and evaluation script accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/abs/2003.08385).
@@ -57,7 +59,7 @@ Dependencies: Python 3; `scikit-learn`
 
 Downloading the data:
 ```bash
-wget https://www.cl.uzh.ch/dam/jcr:f866f285-7784-4d04-a828-d3c2a9242776/xstance-data-v1.0.zip
+wget -O xstance-data-v1.0.zip http://tiny.uzh.ch/12p
 unzip xstance-data-v1.0.zip -d data
 ```
 
@@ -103,7 +105,7 @@ Dependencies:
 
 Downloading the data (if not done in the previous section):
 ```bash
-wget https://www.cl.uzh.ch/dam/jcr:f866f285-7784-4d04-a828-d3c2a9242776/xstance-data-v1.0.zip
+wget -O xstance-data-v1.0.zip http://tiny.uzh.ch/12p
 unzip xstance-data-v1.0.zip -d data
 ```
 
