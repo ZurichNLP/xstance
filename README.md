@@ -112,7 +112,7 @@ unzip xstance-data-v1.0.zip -d data
 Training:
 ```bash
 cd baseline
-allennlp train smartvote.jsonnet \
+allennlp train mbert.jsonnet \
     --include-package allennlp_xstance \
     -s mymodel
 ```
@@ -122,7 +122,7 @@ Predicting:
 cd baseline
 allennlp predict mymodel ../data/test.jsonl \
     --include-package allennlp_xstance \
-    --predictor smartvote_predictor \
+    --predictor xstance_predictor \
     --cuda-device 0 \
     --output-file ../predictions/mypred.jsonl
 ```

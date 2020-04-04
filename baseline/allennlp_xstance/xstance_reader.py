@@ -14,8 +14,8 @@ from allennlp.data.tokenizers import Tokenizer, WordTokenizer
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 
-@DatasetReader.register("smartvote_reader")
-class SmartvoteReader(DatasetReader):
+@DatasetReader.register("xstance_reader")
+class XStanceReader(DatasetReader):
     def __init__(self,
                  token_indexers: Dict[str, TokenIndexer] = None,
                  tokenizer: Tokenizer = None,

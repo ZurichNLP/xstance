@@ -3,7 +3,7 @@ local bert_model = "bert-base-multilingual-cased";
 {
     "dataset_reader": {
         "lazy": false,
-        "type": "smartvote_reader",
+        "type": "xstance_reader",
         "max_sequence_length": 512,
         "skip_label_indexing": false,
         "tokenizer": {

@@ -10,8 +10,8 @@ from allennlp.predictors.predictor import Predictor
 from allennlp.data.fields import LabelField
 
 
-@Predictor.register('smartvote_predictor')
-class SmartvotePredictor(Predictor):
+@Predictor.register('xstance_predictor')
+class XStancePredictor(Predictor):
     """
     Predictor for any model that takes in a sentence and returns
     a single class for it.  In particular, it can be used with
