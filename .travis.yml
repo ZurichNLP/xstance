@@ -8,5 +8,5 @@ install:
   - pip install scikit-learn
   - pip install -r fasttext_baseline/requirements.txt
   - pip install -r mbert_baseline/requirements.txt
-  - cd fasttext_baseline && wget http://www.statmt.org/europarl/v7/tools.tgz && tar -xvf tools.tgz
+  - cd fasttext_baseline && wget http://www.statmt.org/europarl/v7/tools.tgz && tar -xvf tools.tgz && cd ..
 script: python evaluate.py --gold data/test.jsonl --pred predictions/mbert_pred.jsonl
