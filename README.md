@@ -67,7 +67,7 @@ Usage:
 ```bash
 python evaluate.py \
   --gold data/test.jsonl \
-  --pred predictions/pred.jsonl 
+  --pred predictions/mbert_pred.jsonl 
 ```
 
 The predictions file should be a JSON lines file (http://jsonlines.org/). The lines in the file should correspond to the lines in the gold file (*test.jsonl*).
@@ -96,11 +96,44 @@ new_comments_it
 IT 70.19234360410832
 ```
 
-## BERT Baseline
+## fastText Baseline
+Dependencies:
+- Python >= 3.6
+- Perl
+- fastText 0.9.2 (https://github.com/facebookresearch/fastText/tree/master/python)
+- `pip install -r fasttext_baseline/requirements.txt`
+
+Unpacking the data (if not done in the previous section):
+```bash
+unzip data/xstance-data-v1.0.zip -d data
+```
+
+Downloading the Europarl preprocessing tools:
+```bash
+cd fasttext_baseline
+wget http://www.statmt.org/europarl/v7/tools.tgz
+tar -xvf tools.tgz
+```
+
+Training and predicting:
+```bash
+python run.py --data-dir ../data --pred ../predictions/mypred.jsonl
+```
+
+Evaluating:
+```bash
+cd ..
+python evaluate.py \
+  --gold data/test.jsonl \
+  --pred predictions/mypred.jsonl 
+```
+
+
+## M-BERT Baseline
 Dependencies:
 - Python >= 3.6
 - AllenNLP 0.9.0 (http://docs.allennlp.org/master/)
-- `pip install -r baseline/requirements.txt`
+- `pip install -r mbert_baseline/requirements.txt`
 - The commands below assume GPU computation. They can be adapted for CPU, however.
 
 Unpacking the data (if not done in the previous section):
@@ -110,7 +143,7 @@ unzip data/xstance-data-v1.0.zip -d data
 
 Training:
 ```bash
-cd baseline
+cd mbert_baseline
 allennlp train mbert.jsonnet \
     --include-package allennlp_xstance \
     -s mymodel
@@ -118,7 +151,7 @@ allennlp train mbert.jsonnet \
 
 Predicting:
 ```bash
-cd baseline
+cd mbert_baseline
 allennlp predict mymodel ../data/test.jsonl \
     --include-package allennlp_xstance \
     --predictor xstance_predictor \
