@@ -5,6 +5,5 @@ python:
   - "3.8"
 install:
   - pip install -r baseline/requirements.txt
-  - wget -O xstance-data-v1.0.zip http://tiny.uzh.ch/12p
-  - unzip xstance-data-v1.0.zip -d data
+  - unzip data/xstance-data-v1.0.zip -d data
 script: python evaluate.py --gold data/test.jsonl --pred predictions/pred.jsonl

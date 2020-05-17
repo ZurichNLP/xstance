@@ -2,9 +2,10 @@
 
 # <span style="font-variant:small-caps;">x</span>-stance
 
-Documentation and evaluation script accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/abs/2003.08385).
+Data and code accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/abs/2003.08385).
 
-The data can be downloaded [here](http://tiny.uzh.ch/12p). A detailed description can be found in the [paper](https://arxiv.org/abs/2003.08385).
+A detailed description can be found in the [paper](https://arxiv.org/abs/2003.08385).
+
 
 ## Summary
 
@@ -57,10 +58,9 @@ In the train, valid and test files, the comments are paired with a version of th
 
 Dependencies: Python 3; `scikit-learn`
 
-Downloading the data:
+Unpacking the data:
 ```bash
-wget -O xstance-data-v1.0.zip http://tiny.uzh.ch/12p
-unzip xstance-data-v1.0.zip -d data
+unzip data/xstance-data-v1.0.zip -d data
 ```
 
 Usage:
@@ -103,10 +103,9 @@ Dependencies:
 - `pip install -r baseline/requirements.txt`
 - The commands below assume GPU computation. They can be adapted for CPU, however.
 
-Downloading the data (if not done in the previous section):
+Unpacking the data (if not done in the previous section):
 ```bash
-wget -O xstance-data-v1.0.zip http://tiny.uzh.ch/12p
-unzip xstance-data-v1.0.zip -d data
+unzip data/xstance-data-v1.0.zip -d data
 ```
 
 Training:
@@ -137,8 +136,8 @@ python evaluate.py \
 
 
 ## Licenses
-- This repository: MIT License
 - Dataset: CC BY-NC 4.0 (© www.smartvote.ch)
+- Rest of repository: MIT License
 
 ## References
 The dataset and baseline model are described in:
@@ -214,7 +213,7 @@ The metadata are used by search engines such as Google Dataset Search.
                         </tr>
                         <tr>
                             <td>contentUrl</td>
-                            <td><code itemprop="contentUrl">http://tiny.uzh.ch/12p</code>
+                            <td><code itemprop="contentUrl">https://raw.githubusercontent.com/ZurichNLP/xstance/master/data/xstance-data-v1.0.zip</code>
                             </td>
                         </tr>
                         <tr>
