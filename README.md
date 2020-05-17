@@ -100,7 +100,6 @@ IT 70.19234360410832
 Dependencies:
 - Python >= 3.6
 - Perl
-- fastText 0.9.2 (https://github.com/facebookresearch/fastText/tree/master/python)
 - `pip install -r fasttext_baseline/requirements.txt`
 
 Unpacking the data (if not done in the previous section):
