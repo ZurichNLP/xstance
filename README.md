@@ -4,7 +4,7 @@
 
 Data and code accompanying the paper ["X-Stance: A Multilingual Multi-Target Dataset for Stance Detection"](https://arxiv.org/abs/2003.08385).
 
-A detailed description can be found in the [paper](https://arxiv.org/abs/2003.08385).
+A high-level description can be found in the [**blog post**](https://vamvas.ch/more-general-stance-detection-with-x-stance), and a more detailed description in the [**paper**](https://arxiv.org/abs/2003.08385).
 
 
 ## Summary
@@ -50,7 +50,7 @@ Details:
 - Languages: The files *train.jsonl* and *valid.jsonl* contain about 75% German data and 25% French data. The file *test.jsonl* also contains some Italians samples to test zero-shot cross-lingual transfer.
 - `"label"` can be `"FAVOR"` or `"AGAINST"`.
 - `"numerical_label"` provides a more fine-grained label (not used in our baseline). Range of values: {0, 25, 75, 100}, where 0 means "no" and 100 means "yes".
-- `"test_set"`: Only *test.jsonl* has this field. Specifies the test partition (new comments / new questions / new topics; German+French / Italian). For details on the test partitions please refer to Table 2 in the paper.
+- `"test_set"`: Only *test.jsonl* has this field. Specifies the test partition (new comments / new questions / new topics; German+French / Italian). For details on the test partitions please refer to Table 2 in the [paper](https://arxiv.org/abs/2003.08385).
 
 In the train, valid and test files, the comments are paired with a version of the question in the same language (e.g. German comment + German version of the question). The *questions.xx.jsonl* files provide complete translations of all the questions.
 
