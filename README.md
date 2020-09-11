@@ -1,3 +1,4 @@
+[![Live Viewer](https://img.shields.io/badge/Browse-nlp%2Fviewer-brightgreen)](https://huggingface.co/nlp/viewer/?dataset=x_stance)
 [![Build Status](https://travis-ci.org/ZurichNLP/xstance.svg?branch=master)](https://travis-ci.org/ZurichNLP/xstance)
 
 # <span style="font-variant:small-caps;">x</span>-stance
